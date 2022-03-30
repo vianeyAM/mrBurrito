@@ -1,2 +1,2 @@
 # mrBurrito
-Online order project using javaScript
+Online order project
