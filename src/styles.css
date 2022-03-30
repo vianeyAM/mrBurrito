@@ -1,0 +1,160 @@
+body {
+  background-image: url(../img/bck.jpg);
+  background-size: cover;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  margin: 10px 10px;
+}
+
+.on-order {
+  background-color: rgba(237, 197, 35, 0.56);
+  align-content: center;
+  text-align: center;
+  border-radius: 25px;
+  margin: 50px auto;
+  padding: 15px;
+  width: 50%;
+  box-shadow: 10px 10px 30px;
+}
+
+h1 {
+  font-family: "Atma", cursive;
+  font-size: 2em;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  text-align: center;
+  margin: 5% auto;
+}
+
+img {
+  width: 35%;
+  height: auto;
+}
+
+p {
+  font-weight: 600;
+  margin: 5px auto;
+}
+
+#log-button {
+  background-color: #529e58;
+  border: none;
+  color: #ffffff;
+  margin: 10px auto;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 25px;
+  font-family: "Atma", cursive;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+#log-button:hover {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.752);
+  cursor: pointer;
+}
+
+#showlogIn {
+  display: none;
+  margin: 10px auto;
+  color: #b20b77;
+}
+
+::placeholder {
+  color: #ffffff;
+  text-align: center;
+}
+
+input[type="email"],
+[type="password"] {
+  background-color: #b20b7850;
+  border-radius: 25px;
+  margin: 0 auto;
+  border: none;
+  padding: 10px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+#subm-log {
+  background-color: #b20b77;
+  border: none;
+  color: #ffffff;
+  margin: 10px 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 25px;
+  font-family: "Atma", cursive;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+#sumb-log:hover {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.752);
+  cursor: pointer;
+}
+
+.order {
+  display: flex;
+  margin: 20%;
+}
+
+hr {
+  border-color: rgb(237, 197, 35);
+}
+
+#finaltotal {
+  background-color: #049ca46c;
+  border-radius: 25px;
+  margin: 0 auto;
+  border: none;
+  padding: 10px;
+  color: #ffffff;
+}
+
+input[type="number"],
+[type="text"] {
+  background-color: #049ca46c;
+  border-radius: 25px;
+  margin: 0 auto;
+  border: none;
+  padding: 10px;
+}
+select {
+  background-color: #049ca46c;
+  border-radius: 25px;
+  margin: 0 auto;
+  border: none;
+  padding: 10px;
+}
+
+#send {
+  background-color: #049ca4;
+  border: none;
+  color: #ffffff;
+  margin: 10px 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 25px;
+  font-family: "Atma", cursive;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+#send:hover {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.752);
+  cursor: pointer;
+}
+
+.T-order {
+  color: #049ca4;
+}
