@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR. Burrito 🌯</title>
+
+    <!--Styles Sheet-->
+    <link rel="stylesheet" href="./src/styles.css">
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+
+
+</head>
+<body>
+
+    <!--logo-->
+<div class="logo">
+    <img src="./img/mrburrito.png" alt="logotipo">
+</div>
+    
+<div class="on-order">
+    <h1>Order Online</h1>
+
+    <!--LogIn-->
+    <p>Enter to your account</p>
+    <button type="button" id="log-button">Log in</button>
+
+    <div id="showlogIn">
+        <form action="#" onsubmit="return false;">
+            <label >User:</label><br/>
+            <input type="email"  id="email" placeholder="mrburro@email.com" size="30" required class="L-log"><br />
+    
+            <label class="L-log">Password:</label><br />
+            <input type="password" name="password" id="password" pattern=".{9}" title="Must contains 9 characters" required><br />
+        
+            <button type="submit" id="subm-log" >Submit</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <!--BurritosForm-->
+    <div class="order"> 
+    <form name="foodform" action="#" id="foodform" onsubmit="return false;">
+        
+        <table>
+          <tr>
+            <th><label class="T-order">Burrito Size:</label></th>
+            <th>
+                <select name="bsize" id="bsize" class="bsizes" required>
+                    <option value="">Select Size</option>
+                    <option value="large">Large (&euro; 7.00)</option>
+                    <option value="xl">Extra Large (&euro; 9.00)</option>
+                    <option value="supersize" id="Ssize">Supersize (&euro; 17.50)</option>
+                </select>
+            </th>
+          </tr>
+          <tr>
+              <th class="T-order">Number:</th>
+              <th><input type="number" min="1" max="100" name="number" id="quantity" required></th>
+          </tr>
+        <tr>
+            <th class="T-order">Total:</th>
+            <th><p id="finaltotal"></p></th>
+        </tr>
+          <tr>
+              <th class="T-order">Discount Code:</th>
+              <th><input type="text" name="code" id="code" size="20" placeholder="Add Disscount Code"></th>
+          </tr>  
+          <tr> 
+              <th></th>
+              <th><button type="submit" id="send" onclick="getBurritos()">Send Order</button></th>
+          </tr>
+        </table>
+    </form>
+    </div>
+
+
+</div>
+
+
+<!--JS-->
+<script src="src/login.js"></script>
+<script src="src/calculate.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<!--JQ-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready( function(){
+        alert('Get 10% with the code MEXTEXGOOD!!');
+    });
+</script>
+
+</body>
+</html>
